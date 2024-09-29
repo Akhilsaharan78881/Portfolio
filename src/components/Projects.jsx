@@ -4,7 +4,7 @@ import React from "react";
 
 import onlinemusicplayer from '../assets/onlinemusicplayer.png'
 import expensetracker from '../assets/expensetracker.png'
-import chromeExtension from '../assets/chromeExtension.png'
+import chromeExtension1 from '../assets/chromeExtension1.png'
 import bsse from '../assets/bsse.png'
 import Footer from './Footer'
 
@@ -23,7 +23,7 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
                 <img className="w-full rounded-t-lg h-auto object-cover " src={expensetracker} alt="" />
             </a>}
             {title=='Chrome Extension' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={chromeExtension} alt="" />
+                <img className="w-full rounded-t-lg h-auto object-cover " src={chromeExtension1} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="#">
@@ -96,7 +96,7 @@ export const project = [
     {
         title:'Chrome Extension',
         description:' Innovated a Color Picker Chrome extension that enables developers to select colors effortlessly while designing user interfaces, improving color selection speed by 80%, The extension displays both the selected color and its corresponding code, enhancing efficiency in frontend development.',
-        image: {chromeExtension},
+        image: {chromeExtension1},
         git:"https://chrome-extension-teal.vercel.app/",
         technologies:[ 'HTML' ,'CSS' , 'Javascript', 'React', 'Material-UI']
     }
