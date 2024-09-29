@@ -4,6 +4,7 @@ import React from "react";
 
 import onlinemusicplayer from '../assets/onlinemusicplayer.png'
 import expensetracker from '../assets/expensetracker.png'
+import chromeExtension from '../assets/chromeExtension.png'
 import bsse from '../assets/bsse.png'
 import Footer from './Footer'
 
@@ -20,6 +21,9 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
 
             {title=='Expense Tracker' && <a href="#">
                 <img className="w-full rounded-t-lg h-auto object-cover " src={expensetracker} alt="" />
+            </a>}
+            {title=='Chrome Extension' && <a href="#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={chromeExtension} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="#">
@@ -86,8 +90,15 @@ export const project = [
         title:'Expense Tracker',
         description:' Developed an interactive Expense Tracker web application aimed at optimizing financial management for users. This project significantly improved financial tracking and user experience. Technologies used - HTML, CSS, JavaScript',
         image: {expensetracker},
-        git:"https://github.com/Akhilsaharan78881/Expense_Tracker",
+        git:"https://expense-tracker-ivory-chi.vercel.app/",
         technologies:[ 'HTML' ,'CSS' , 'Javascript']
+    },
+    {
+        title:'Chrome Extension',
+        description:' Innovated a Color Picker Chrome extension that enables developers to select colors effortlessly while designing user interfaces, improving color selection speed by 80%, The extension displays both the selected color and its corresponding code, enhancing efficiency in frontend development.',
+        image: {chromeExtension},
+        git:"https://chrome-extension-teal.vercel.app/",
+        technologies:[ 'HTML' ,'CSS' , 'Javascript', 'React', 'Material-UI']
     }
 ]
 
